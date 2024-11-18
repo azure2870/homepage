@@ -1,6 +1,6 @@
 var windowWidth = $(window).width();
 layer.config({
-  extend: "homepage/style.css", //加载扩展样式
+  extend: "homepage/static/style.css", //加载扩展样式
   skin: "layer-ext-homepage",
 });
 
