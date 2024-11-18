@@ -6,9 +6,9 @@
        <!-- 浏览器标签上显示的网站标题 -->
        <title></title>
        <!-- 网站介绍 -->
-       <meta name="description" content="">
+       <meta name="description" content="个人网站主页模板">
        <!-- 网站关键字 -->
-       <meta name="keywords" content="">
+       <meta name="keywords" content="学不懂概率论,个人主页,统计学">
        <!-- 浏览器标签上显示的图标 -->
        <link rel="stylesheet" href="./icon/icon.css">
        <!-- 样式文件 -->
@@ -84,25 +84,20 @@
              <!-- 音乐播放器 -->
              <div id="aplayer-inner" class="aplayer " style="border-radius: 6px;"></div>
              <div class="nav-button">
-             <!-- 导航按钮 -->
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-             class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-             class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-             class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-             class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-              class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
-             <button data-href="链接" data-title="Blog" data-window="pop" data-anim="4"   
-             data-area-w="80%" data-area-h="90%" data-shade="false"
-             class="spacing-button kisou-nav-btn btn btn-primary col-lg-4">按钮</button>
+              <!-- 导航按钮组 -->
+                        <button data-href="https://azure2870.github.io/zyf.github.io/" data-title="Blog" data-window="pop" data-anim="4"
+                            data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-primary col-lg-4">Blog</button>
+
+                        <button data-href="https://github.com/azure2870/homepage" data-title="GitHub" data-window="newtab"
+                            data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-secondary col-lg-4">GitHub</button>
+
+                        <button data-href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@kezez.com"
+                            data-title="Blog" data-window="pop" data-anim="4" data-area-w="80%" data-area-h="90%"
+                            data-shade="false" class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
+
+                        <!-- end 导航按钮组 -->
              </div>
              <div class="copyright">
                    <div class="footer">
@@ -161,7 +156,7 @@
             var blog_running_mins = document.getElementById("blog_running_mins");
             var blog_running_secs = document.getElementById("blog_running_secs");
             function refresh_blog_running_time() {
-            var time = new Date() - new Date(2024, 5, 0, 0, 0, 0); //时间往前30天 时间格式：年 ，月，日，时，分，秒
+            var time = new Date() - new Date(2024, 10, 19, 0, 0, 0); //时间往前30天 时间格式：年 ，月，日，时，分，秒
             var d = parseInt(time / 24 / 60 / 60 / 1000);
             var h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);
             var m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);
