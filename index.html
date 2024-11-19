@@ -22,12 +22,12 @@
     <style>
         body {
             /*背景图片URL 可使用随机图片API */
-            background-image: url("./static/images/1.jpg");
+            background-image: url("https://cdn.jsdelivr.net/gh/azure2870/homepage/static/images/wallhaven-7p27k3.png");
         }
 
         .photo-bg {
             /* 卡片左侧图片 */
-            background-image: url("./static/images/20241119192300.png");
+            background-image: url("https://cdn.jsdelivr.net/gh/azure2870/homepage/static/images/wallhaven-e7j33o.jpg");
         }
 
         .kz-video {
@@ -71,20 +71,72 @@
                 <p id="hitokoto_text">:D 一言获取中...</p>
                 <div class="container-fluid">
                     <div class="row">
-                        <!-- 导航按钮组 -->
-                        <button data-href="https://azure2870.github.io/zyf.github.io/" data-title="Blog" data-window="pop" data-anim="4"
-                            data-area-w="80%" data-area-h="90%" data-shade="false"
-                            class="kz-nav-btn btn btn-primary col-lg-4">Blog</button>
+                             <style>
+                                /* 自定义莫兰迪蓝色系 */
+                                .btn-morandi-blue1 {
+                                    background-color: #6c7b8b; /* 雾霾蓝 */
+                                    color: white;
+                                    border: none;
+                                }
+                            
+                                .btn-morandi-blue2 {
+                                    background-color: #91a3b0; /* 浅灰蓝 */
+                                    color: white;
+                                    border: none;
+                                }
+                            
+                                .btn-morandi-blue3 {
+                                    background-color: #b0c4de; /* 淡蓝 */
+                                    color: white;
+                                    border: none;
+                                }
+                            
+                                /* 鼠标悬停效果 */
+                                .btn-morandi-blue1:hover,
+                                .btn-morandi-blue2:hover,
+                                .btn-morandi-blue3:hover {
+                                    opacity: 0.85;
+                                }
+                            </style>
+                            
+                            <!-- 导航按钮组 -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <button data-href="https://azure2870.github.io/zyf.github.io/" 
+                                            data-title="Blog" 
+                                            data-window="pop" 
+                                            data-anim="4"
+                                            data-area-w="80%" 
+                                            data-area-h="90%" 
+                                            data-shade="false"
+                                            class="kz-nav-btn btn btn-morandi-blue1 col-lg-4">
+                                        Blog
+                                    </button>
+                            
+                                    <button data-href="https://github.com/azure2870/homepage/" 
+                                            data-title="GitHub" 
+                                            data-window="newtab"
+                                            data-anim="4" 
+                                            data-area-w="80%" 
+                                            data-area-h="90%" 
+                                            data-shade="false"
+                                            class="kz-nav-btn btn btn-morandi-blue2 col-lg-4">
+                                        GitHub
+                                    </button>
+                            
+                                    <button data-href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@kezez.com"
+                                            data-title="Send a Mail" 
+                                            data-window="pop" 
+                                            data-anim="4" 
+                                            data-area-w="80%" 
+                                            data-area-h="90%"
+                                            data-shade="false" 
+                                            class="kz-nav-btn btn btn-morandi-blue3 col-lg-4">
+                                        Send a Mail
+                                    </button>
+                                </div>
+                            </div>
 
-                        <button data-href="https://github.com/azure2870/homepage/" data-title="GitHub" data-window="newtab"
-                            data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false"
-                            class="kz-nav-btn btn btn-secondary col-lg-4">GitHub</button>
-
-                        <button data-href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@kezez.com"
-                            data-title="Blog" data-window="pop" data-anim="4" data-area-w="80%" data-area-h="90%"
-                            data-shade="false" class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
-
-                        <!-- end 导航按钮组 -->
                     </div>
                 </div>
                 <!-- aplayer inner -->
