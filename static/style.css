@@ -1,39 +1,43 @@
-/* 设置HTML和Body的全局样式，包括字体大小、颜色和背景设置 */
 html, body {
-    font-size: 18px; /* 全局字体大小 */
-    color: #6c767d; /* 全局字体颜色 */
-    background-color: #ebf1f5; /* 背景色 */
-    background-image: url("https://cdn.jsdelivr.net/gh/azure2870/homepage/static/images/wallhaven-7p27k3.png"); /* 背景图片 */
-    background-attachment: fixed; /* 背景固定不滚动 */
-    background-repeat: no-repeat; /* 背景不重复 */
-    background-size: cover; /* 背景覆盖整个页面 */
-    height: 100%; /* 页面高度 */
+    font-size: 18px;
+    color: #6c767d;
+    background-color: #ebf1f5;
+    background-image: url("https://bu.dusays.com/2022/06/04/629b0a2a89425.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
-/* 自定义滚动条样式 */
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
 ::-webkit-scrollbar {
-    width: 5px; /* 滚动条宽度 */
-    background-color: #F5F5F5; /* 滚动条背景色 */
+    width: 5px;
+    /* height: 5px; */
+    background-color: #F5F5F5;
 }
+
+
+/*定义滚动条轨道 内阴影+圆角*/
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /* 内阴影 */
-    border-radius: 10px; /* 圆角效果 */
-    background-color: #F5F5F5; /* 滚动条轨道颜色 */
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
+
+
+/*定义滑块 内阴影+圆角*/
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px; /* 圆角效果 */
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); /* 滑块内阴影 */
-    background-color: #555; /* 滑块颜色 */
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
 }
-
-/* 控制音乐播放器样式 */
-#main .aplayer {
-    margin: 10px 0!important; /* 上下外边距 */
+#main .aplayer{
+    margin: 10px 0!important;
 }
-
-/* 标题样式定义 */
 h1 {
     font-size: 36px;
     margin-bottom: .5em;
@@ -52,69 +56,128 @@ h4 {
     font-size: 16px;
 }
 
-/* 设置标题颜色 */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: black;
 }
 
-/* 视频背景相关设置 */
+/* 视频背景 */
 .kz-video {
-    display: none; /* 默认隐藏 */
-    position: fixed; /* 固定位置 */
+    display: none;
+    position: fixed;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .kz-video video {
-    min-width: 100%; /* 最小宽度 */
-    min-height: 100%; /* 最小高度 */
-    background-size: cover; /* 背景覆盖 */
-    width: auto; /* 自动宽度 */
-    height: auto; /* 自动高度 */
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    width: auto;
+    height: auto;
 }
 
-/* 卡片样式 */
 .card {
-    border: none; /* 无边框 */
-    padding: 50px 30px 0px; /* 内边距 */
-    border-radius: 0; /* 无圆角 */
+    border: none;
+    padding: 50px 30px 0px;
+    border-radius: 0;
 }
 
-/* 添加一个容器并垂直居中 */
 .container {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-/* 链接、按钮等交互效果 */
+.my-card {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+}
+
 strike {
-    color: red; /* 删除线的颜色 */
+    color: red;
 }
 
 .btn {
-    border-radius: 0; /* 无圆角 */
-    margin: 5px 0; /* 上下外边距 */
-    width: 100%; /* 按钮宽度 */
-    padding: 12px 40px; /* 内边距 */
-    transition: ease; /* 过渡效果 */
+    border-radius: 0;
+    margin: 5px 0;
+    width: 100%;
+    padding: 12px 40px;
+    transition: ease;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover,
+.btn-primary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-secondary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-success {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
 .btn-success:hover {
-    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232); /* 鼠标悬停时的阴影效果 */
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
 
-/* 卡片背景图片 */
+.social {
+    padding-left: 0;
+}
+
+.social p {
+    margin-bottom: 0;
+}
+
+.social li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.social .fa {
+    font-size: 24px;
+}
+
 .photo-bg {
-    background-image: url(https://cdn.jsdelivr.net/gh/azure2870/homepage/static/images/wallhaven-zyyx1o.jpg); /* 背景图片 */
-    background-position: center; /* 背景位置 */
-    background-repeat: no-repeat; /* 背景不重复 */
-    background-size: cover; /* 背景覆盖 */
+    /* background-image: url(assets/background.jpg); */
+    background-image: url(https://tva1.sinaimg.cn/large/0072Vf1pgy1foxk456b0fj31hc0u0dxu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* 响应式设计 */
+footer p {
+    font-size: 12px;
+}
+
+#kaygb-blog-a,
+#kaygb-mail-a {
+    display: none;
+}
+
 @media (max-width: 1199px) {
     body {
         min-height: 600px;
@@ -122,13 +185,15 @@ strike {
     h1 {
         font-size: 24px;
     }
-    h2, .social .fa {
+    h2,
+    .social .fa {
         font-size: 20px;
     }
     h3 {
         font-size: 16px;
     }
-    h4, p {
+    h4,
+    p {
         font-size: 14px;
     }
     .card {
@@ -136,7 +201,20 @@ strike {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
+    .photo-bg {
+        min-height: calc(100vh - 500px);
+    }
+}
+
+@media(max-width:991px) {
+    .photo-bg {
+        background-position: top;
+        min-height: calc(90vh - 440px);
+    }
+}
+
+@media(max-width: 767px) {
     .container {
         position: relative;
         top: 0;
@@ -148,8 +226,15 @@ strike {
     .card {
         padding: 20px;
     }
+    #kaygb-blog-a,
+    #kaygb-mail-a {
+        display: block;
+    }
+    #kaygb-blog,
+    #kaygb-mail {
+        display: none;
+    }
 }
-
 /* 添加“一言”样式 */
 #hitokoto_text {
     color: #2472A3; /* 字体颜色 */
@@ -157,7 +242,6 @@ strike {
     font-family: Arial, sans-serif; /* 字体样式 */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 字体阴影效果 */
 }
-
 #frame {
     width: 50%;
     height: 50vh;
