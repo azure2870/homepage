@@ -1,12 +1,7 @@
-console.log
-("\n %c FH-HomePage V1.0.0%c  https://github.com/FichteHerbst/FH-HomePage \n", 
-"color:#fff;background:linear-gradient(90deg,#448bff,#44e9ff);padding:5px 0;", 
-"color:#000;background:linear-gradient(90deg,#44e9ff,#ffffff);padding:5px 0px 5px 0px;");
-
 
 var windowWidth = $(window).width();
 layer.config({
-  extend: 'kzhomepage/style.css', //加载扩展样式
+  extend: 'homepage/style.css', //加载扩展样式
   skin: 'layer-ext-kisou'
 });
 
