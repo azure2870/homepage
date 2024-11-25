@@ -1,7 +1,7 @@
 var windowWidth = $(window).width();
 layer.config({
-  extend: "kzhomepage/style.css", //加载扩展样式
-  skin: "layer-ext-kzhomepage",
+  extend: "homepage/style.css", //加载扩展样式
+  skin: "layer-ext-homepage",
 });
 
 // Nav buttons
@@ -38,8 +38,8 @@ $(".kz-nav-btn").on("click", function () {
 
 console.log(
   "\n" +
-    " %c KZHomePage v1.2.0 by kaygb " +
-    " %c https://blog.170601.xyz/archives/25.html " +
+    " %c HomePage v1.2.0 by azure2870 " +
+    " %c https://github.com/azure2870/homepage/ " +
     "\n" +
     "\n",
   "color: #fff; background: #fd79a8; padding:5px 0;",
